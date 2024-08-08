@@ -20,6 +20,6 @@ class Login
             # code...
             return $next($request);
         }
-        return view('/');
+        return redirect('/');
     }
 }

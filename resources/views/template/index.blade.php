@@ -1,21 +1,19 @@
 @extends('template2.template')
 @section('content')
 <div class="content">
-    <!-- Animated -->
     <div class="animated fadeIn">
-        <!-- Widgets  -->
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <div class="stat-widget-five">
-                            <div class="stat-icon dib flat-color-1">
-                                <i class="pe-7s-cash"></i>
+                            <div class="stat-icon dib flat-color-4">
+                                <i class="pe-7s-users"></i>
                             </div>
                             <div class="stat-content">
                                 <div class="text-left dib">
-                                    <div class="stat-text">$<span class="count">23569</span></div>
-                                    <div class="stat-heading">Revenue</div>
+                                    <div class="stat-text"><span class="count">2986</span></div>
+                                    <div class="stat-heading">Lengkapi Profile</div>
                                 </div>
                             </div>
                         </div>
@@ -27,13 +25,31 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="stat-widget-five">
-                            <div class="stat-icon dib flat-color-2">
-                                <i class="pe-7s-cart"></i>
+                            <div class="stat-icon dib flat-color-1">
+                                <i class="pe-7s-cash"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="text-left dib">
+                                    <div class="stat-text">$<span class="count">23569</span></div>
+                                    <div class="stat-heading">Lowongan Kerja</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="stat-widget-five">
+                            <div class="stat-icon dib flat-color-3">
+                                <i class="pe-7s-browser"></i>
                             </div>
                             <div class="stat-content">
                                 <div class="text-left dib">
                                     <div class="stat-text"><span class="count">3435</span></div>
-                                    <div class="stat-heading">Sales</div>
+                                    <div class="stat-heading">Permohonan Saya</div>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +67,7 @@
                             <div class="stat-content">
                                 <div class="text-left dib">
                                     <div class="stat-text"><span class="count">349</span></div>
-                                    <div class="stat-heading">Templates</div>
+                                    <div class="stat-heading">Survey Kepuasan</div>
                                 </div>
                             </div>
                         </div>
@@ -59,30 +75,11 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="stat-widget-five">
-                            <div class="stat-icon dib flat-color-4">
-                                <i class="pe-7s-users"></i>
-                            </div>
-                            <div class="stat-content">
-                                <div class="text-left dib">
-                                    <div class="stat-text"><span class="count">2986</span></div>
-                                    <div class="stat-heading">Clients</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- /Widgets -->
         <div class="clearfix"></div>
-        <!-- Orders -->
         <div class="orders">
             <div class="row">
-                <div class="col-xl-8">
+                <div class="col-xl-12">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="box-title">Orders </h4>
@@ -179,12 +176,12 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div> <!-- /.table-stats -->
+                            </div> 
                         </div>
-                    </div> <!-- /.card -->
-                </div>  <!-- /.col-lg-8 -->
+                    </div> 
+                </div>  
 
-                <div class="col-xl-4">
+                {{-- <div class="col-xl-4">
                     <div class="row">
                         <div class="col-lg-6 col-xl-12">
                             <div class="card br-0">
@@ -193,10 +190,10 @@
                                         <div id="flotPie1" class="float-chart"></div>
                                     </div>
                                 </div>
-                            </div><!-- /.card -->
-                        </div>
+                            </div>
+                        </div> --}}
 
-                        <div class="col-lg-6 col-xl-12">
+                        {{-- <div class="col-lg-6 col-xl-12">
                             <div class="card bg-flat-color-3  ">
                                 <div class="card-body">
                                     <h4 class="card-title m-0  white-color ">August 2018</h4>
@@ -205,13 +202,12 @@
                                      <div id="flotLine5" class="flot-line"></div>
                                  </div>
                             </div>
-                        </div>
-                    </div>
-                </div> <!-- /.col-md-4 -->
+                        </div> --}}
+                    {{-- </div>
+                </div> 
             </div>
         </div>
-        <!-- /.orders -->
-        <!-- To Do and Live Chat -->
+        
         <div class="row">
             <div class="col-lg-6">
                 <div class="card">
@@ -266,13 +262,13 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div> <!-- /.todo-list -->
-                        </div>
-                    </div> <!-- /.card-body -->
-                </div><!-- /.card -->
-            </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div> --}}
 
-            <div class="col-lg-6">
+            {{-- <div class="col-lg-6">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title box-title">Live Chat</h4>
@@ -295,7 +291,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div><!-- /.msg-received -->
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="msg-sent msg-container">
@@ -313,7 +309,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div><!-- /.msg-sent -->
+                                        </div>
                                     </li>
                                 </ul>
                                 <div class="send-mgs">
@@ -324,24 +320,21 @@
                                         <i class="pe-7s-paper-plane"></i>
                                     </button>
                                 </div>
-                            </div><!-- /.messenger-box -->
+                            </div>
                         </div>
-                    </div> <!-- /.card-body -->
-                </div><!-- /.card -->
-            </div>
-        </div>
-        <!-- /To Do and Live Chat -->
-        <!-- Calender Chart Weather  -->
+                    </div> 
+                </div>
+            </div> --}}
+        {{-- </div>
         <div class="row">
             <div class="col-md-12 col-lg-4">
                 <div class="card">
                     <div class="card-body">
-                        <!-- <h4 class="box-title">Chandler</h4> -->
                         <div class="calender-cont widget-calender">
                             <div id="calendar"></div>
                         </div>
                     </div>
-                </div><!-- /.card -->
+                </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
@@ -350,7 +343,7 @@
                         <div id="flotBarChart" class="float-chart ml-4 mr-4"></div>
                     </div>
                     <div id="cellPaiChart" class="float-chart"></div>
-                </div><!-- /.card -->
+                </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="card weather-box">
@@ -360,11 +353,9 @@
                             <div id="weather-one" class="weather-one"></div>
                         </div>
                     </div>
-                </div><!-- /.card -->
+                </div>
             </div>
         </div>
-        <!-- /Calender Chart Weather -->
-        <!-- Modal - Calendar - Add New Event -->
         <div class="modal fade none-border" id="event-modal">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -380,10 +371,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /#event-modal -->
-        <!-- Modal - Calendar - Add Category -->
-        <div class="modal fade none-border" id="add-category">
+        </div> --}}
+        {{-- <div class="modal fade none-border" id="add-category">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -418,24 +407,19 @@
                 </div>
             </div>
         </div>
-    <!-- /#add-category -->
     </div>
-    <!-- .animated -->
-</div>
-<!-- /.content -->
+</div> --}}
 <div class="clearfix"></div>
-<!-- Footer -->
-<footer class="site-footer">
-    <div class="footer-inner bg-white">
-        <div class="row">
-            <div class="col-sm-6">
-                Copyright &copy; 2018 Ela Admin
+        <footer class="site-footer">
+            <div class="footer-inner bg-white">
+                <div class="row">
+                    <div class="col-sm-6">
+                        Copyright &copy; 2018 Ela Admin
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        Designed by <a href="https://colorlib.com">Colorlib</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 text-right">
-                Designed by <a href="https://colorlib.com">Colorlib</a>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- /.site-footer -->
+        </footer>
 @endsection

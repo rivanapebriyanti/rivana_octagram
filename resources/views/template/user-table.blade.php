@@ -48,15 +48,15 @@
                                             @csrf
                                             <div class="mb-3">
                                                 <label for="recipient-name" class="col-form-label">Name</label>
-                                                <input type="text" name="name" class="form-control" id="recipient-name">
+                                                <input type="text" name="name" class="form-control" id="recipient-name" required>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="email" class="col-form-label">Email</label>
-                                                <input type="email" name="email" class="form-control" id="email">
+                                                <input type="email" name="email" class="form-control" id="email" required>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="password" class="col-form-label">Password</label>
-                                                <input type="password" name="password" class="form-control" id="password">
+                                                <input type="password" name="password" class="form-control" id="password" required>
                                             </div>
                                             <div class="mb-3">
                                                 <input type="submit" value="Add" class="btn btn-success">
@@ -123,9 +123,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            {{-- @foreach ($edit as $key =>  $item)
-                                            @endforeache --}}
-                                            <a href="/destroy/{{ $item->id }}" class="btn btn-danger">Delete</a>
+                                            <a href="/destroy/{{ $item->id }}" onclick="return window.confirm('Yakin hapus data ini?')" class="btn btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -136,12 +134,10 @@
             </div>
 
         </div>
-    </div><!-- .animated -->
-</div><!-- .content -->
-
+    </div>
+</div>
 
 <div class="clearfix"></div>
-
 <footer class="site-footer">
     <div class="footer-inner bg-white">
         <div class="row">

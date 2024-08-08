@@ -35,14 +35,6 @@
                         <button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#mediumModal">
                             Add Data
                         </button>
-
-                        {{-- <form action="/search" method="post">
-                            @csrf
-                            <div class="input-group">
-                                <input type="search" class="form-control" name="search" placeholder="Search...">
-                                <button class="btn btn-primary input-group-text">Search</button>
-                              </div>
-                        </form> --}}
                         <div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="modalinput" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
@@ -114,7 +106,7 @@
                                                                 @csrf
                                                                 <div class="mb-3">
                                                                     <label for="recipient-name" class="col-form-label">Name</label>
-                                                                    <input type="text" name="name" class="form-control" value="{{ $item->name }}" id="recipient-name">
+                                                                    <input type="text" name="name" class="form-control" value="{{ $item->name }}" id="recipient-name" required>
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <div class="mb-3">
@@ -134,23 +126,19 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="/delete/{{ $item->id }}" class="btn btn-danger">Delete</a>
+                                            <a href="/delete/{{ $item->id }}" onclick="return window.confirm('Yakin hapus data ini?')" class="btn btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                 @endforeach
-                                {{-- <div class=" my-5">
-                                    {{ $categori->withQueryString()->links() }}
-                                </div> --}}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!-- .animated -->
-</div><!-- .content -->
+    </div>
+</div>
 <div class="clearfix"></div>
-
         <footer class="site-footer">
             <div class="footer-inner bg-white">
                 <div class="row">
@@ -163,6 +151,4 @@
                 </div>
             </div>
         </footer>
-
-        
 @endsection

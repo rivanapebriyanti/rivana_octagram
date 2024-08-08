@@ -7,18 +7,10 @@
                     <a href="/index"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     <a href="/user"><i class="menu-icon fa fa-user"></i>User </a>
                     <a href="/category"><i class="menu-icon fa fa-table"></i>Category</a>
-                </li>
-                
-                <li class="menu-title">Extras</li><!-- /.menu-title -->
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
-                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a></li>
-                    </ul>
+                    <a href=""><i class="menu-icon fa fa-user"></i>Profile</a>
+                    <a href="/logout"><i class="menu-icon fa fa-sign-out"></i>logout</a>
                 </li>
             </ul>
-        </div><!-- /.navbar-collapse -->
+        </div>
     </nav>
-</aside><!-- /#left-panel -->
+</aside>

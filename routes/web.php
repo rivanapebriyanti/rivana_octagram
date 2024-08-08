@@ -15,12 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 Route::get('/',[UserController::class,'login']);
-Route::post('/auth',[UserController::class,'autentikasi']);
+Route::post('/auth',[UserController::class,'auth']);
 Route::get('/logout',[UserController::class,'logout']);
+
 Route::middleware(['login'])->group(function(){
     Route::get('/user',[UserController::class, 'user']);
     Route::get('/user',[UserController::class, 'show_user']);
@@ -30,11 +28,7 @@ Route::middleware(['login'])->group(function(){
     Route::post('/update/{id}',[UserController::class,'update']);
     Route::get('/destroy/{id}',[UserController::class,'delete']);
 
-
     Route::get('/index',[CategoryController::class,'index']);
-
-
-
     Route::get('/category',[CategoryController::class, 'category']);
     Route::get('/create',[CategoryController::class,'add']);
     Route::post('/create',[CategoryController::class,'create']);

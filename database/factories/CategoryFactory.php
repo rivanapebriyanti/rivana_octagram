@@ -18,7 +18,7 @@ class CategoryFactory extends Factory
     {
         return [
             //
-            'name'=>fake()->name(),
+            'name'=>fake()->word(),
             'is_publish'=>fake()->boolean(),
             'created_at'=>now(),
             'updated_at'=>now(),

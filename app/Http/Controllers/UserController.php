@@ -13,7 +13,7 @@ class UserController extends Controller
     public function login(){
         return view('template.page-login');
     }
-    public function autentikasi(Request $request){
+    public function auth(Request $request){
         $validasi = $request->validate([
             'email' => ['email','required'],
             'password' => ['required']
@@ -40,6 +40,12 @@ class UserController extends Controller
     
     public function create(Request $request)
     {
+        // $validasi = $request->validate([
+        //     'name' => ['required','min:3'],
+        //     'email' => ['required'],
+        //     'password' => ['required']
+        // ]);
+
         $validasi = User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -67,6 +73,12 @@ class UserController extends Controller
 
     public function update(Request $request)
     {
+        // $validasi = $request->validate([
+        //     'name' => ['required','min:3'],
+        //     'email' => ['required'],
+        //     'password' => ['required']
+        // ]);
+
         $user = User::where('id', $request->id)->update([
             'name' => $request->name,
             'email' => $request->email,
